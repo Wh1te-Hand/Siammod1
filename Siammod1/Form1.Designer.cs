@@ -34,9 +34,6 @@
             this.chart_graphic = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.RMS = new System.Windows.Forms.Label();
-            this.variance = new System.Windows.Forms.Label();
-            this.math_average = new System.Windows.Forms.Label();
             this.button_start = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,14 +41,19 @@
             this.textBox_R = new System.Windows.Forms.TextBox();
             this.textBox_m = new System.Windows.Forms.TextBox();
             this.textBox_a = new System.Windows.Forms.TextBox();
+            this.RMS = new System.Windows.Forms.Label();
+            this.variance = new System.Windows.Forms.Label();
+            this.math_average = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.indirect_1 = new System.Windows.Forms.Label();
-            this.indirect_2 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.indirect_period = new System.Windows.Forms.Label();
+            this.indirect_length = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.indirect_try = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chart_graphic)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -60,6 +62,9 @@
             // 
             // chart_graphic
             // 
+            this.chart_graphic.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             chartArea2.Name = "ChartArea1";
             this.chart_graphic.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
@@ -75,6 +80,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.chart_graphic);
             this.groupBox1.Location = new System.Drawing.Point(1, 0);
             this.groupBox1.Name = "groupBox1";
@@ -85,6 +93,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.button_start);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
@@ -98,30 +108,6 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Parametrs";
-            // 
-            // RMS
-            // 
-            this.RMS.AutoSize = true;
-            this.RMS.Location = new System.Drawing.Point(164, 110);
-            this.RMS.Name = "RMS";
-            this.RMS.Size = new System.Drawing.Size(0, 16);
-            this.RMS.TabIndex = 9;
-            // 
-            // variance
-            // 
-            this.variance.AutoSize = true;
-            this.variance.Location = new System.Drawing.Point(164, 75);
-            this.variance.Name = "variance";
-            this.variance.Size = new System.Drawing.Size(0, 16);
-            this.variance.TabIndex = 8;
-            // 
-            // math_average
-            // 
-            this.math_average.AutoSize = true;
-            this.math_average.Location = new System.Drawing.Point(164, 37);
-            this.math_average.Name = "math_average";
-            this.math_average.Size = new System.Drawing.Size(0, 16);
-            this.math_average.TabIndex = 7;
             // 
             // button_start
             // 
@@ -187,13 +173,41 @@
             this.textBox_a.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_a_KeyPress);
             this.textBox_a.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox_a_KeyUp);
             // 
+            // RMS
+            // 
+            this.RMS.AutoSize = true;
+            this.RMS.Location = new System.Drawing.Point(164, 110);
+            this.RMS.Name = "RMS";
+            this.RMS.Size = new System.Drawing.Size(0, 16);
+            this.RMS.TabIndex = 9;
+            // 
+            // variance
+            // 
+            this.variance.AutoSize = true;
+            this.variance.Location = new System.Drawing.Point(164, 75);
+            this.variance.Name = "variance";
+            this.variance.Size = new System.Drawing.Size(0, 16);
+            this.variance.TabIndex = 8;
+            // 
+            // math_average
+            // 
+            this.math_average.AutoSize = true;
+            this.math_average.Location = new System.Drawing.Point(164, 37);
+            this.math_average.Name = "math_average";
+            this.math_average.Size = new System.Drawing.Size(0, 16);
+            this.math_average.TabIndex = 7;
+            // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Controls.Add(this.indirect_try);
+            this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.math_average);
             this.groupBox3.Controls.Add(this.variance);
             this.groupBox3.Controls.Add(this.RMS);
-            this.groupBox3.Controls.Add(this.indirect_1);
-            this.groupBox3.Controls.Add(this.indirect_2);
+            this.groupBox3.Controls.Add(this.indirect_period);
+            this.groupBox3.Controls.Add(this.indirect_length);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label6);
@@ -206,21 +220,30 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "the required coefficients";
             // 
-            // indirect_1
+            // label9
             // 
-            this.indirect_1.AutoSize = true;
-            this.indirect_1.Location = new System.Drawing.Point(164, 146);
-            this.indirect_1.Name = "indirect_1";
-            this.indirect_1.Size = new System.Drawing.Size(0, 16);
-            this.indirect_1.TabIndex = 10;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(22, 220);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(85, 16);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Indirect signs";
             // 
-            // indirect_2
+            // indirect_period
             // 
-            this.indirect_2.AutoSize = true;
-            this.indirect_2.Location = new System.Drawing.Point(164, 185);
-            this.indirect_2.Name = "indirect_2";
-            this.indirect_2.Size = new System.Drawing.Size(0, 16);
-            this.indirect_2.TabIndex = 11;
+            this.indirect_period.AutoSize = true;
+            this.indirect_period.Location = new System.Drawing.Point(164, 146);
+            this.indirect_period.Name = "indirect_period";
+            this.indirect_period.Size = new System.Drawing.Size(0, 16);
+            this.indirect_period.TabIndex = 10;
+            // 
+            // indirect_length
+            // 
+            this.indirect_length.AutoSize = true;
+            this.indirect_length.Location = new System.Drawing.Point(164, 185);
+            this.indirect_length.Name = "indirect_length";
+            this.indirect_length.Size = new System.Drawing.Size(0, 16);
+            this.indirect_length.TabIndex = 11;
             // 
             // label8
             // 
@@ -245,18 +268,18 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(22, 146);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 16);
+            this.label6.Size = new System.Drawing.Size(47, 16);
             this.label6.TabIndex = 2;
-            this.label6.Text = "indirect signs";
+            this.label6.Text = "Period";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(22, 185);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 16);
+            this.label5.Size = new System.Drawing.Size(47, 16);
             this.label5.TabIndex = 1;
-            this.label5.Text = "indirect signs";
+            this.label5.Text = "Length";
             // 
             // label4
             // 
@@ -266,6 +289,14 @@
             this.label4.Size = new System.Drawing.Size(118, 16);
             this.label4.TabIndex = 0;
             this.label4.Text = "math. expectation=";
+            // 
+            // indirect_try
+            // 
+            this.indirect_try.AutoSize = true;
+            this.indirect_try.Location = new System.Drawing.Point(164, 220);
+            this.indirect_try.Name = "indirect_try";
+            this.indirect_try.Size = new System.Drawing.Size(0, 16);
+            this.indirect_try.TabIndex = 13;
             // 
             // Form1
             // 
@@ -308,8 +339,10 @@
         private System.Windows.Forms.Label RMS;
         private System.Windows.Forms.Label variance;
         private System.Windows.Forms.Label math_average;
-        private System.Windows.Forms.Label indirect_1;
-        private System.Windows.Forms.Label indirect_2;
+        private System.Windows.Forms.Label indirect_period;
+        private System.Windows.Forms.Label indirect_length;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label indirect_try;
     }
 }
 
