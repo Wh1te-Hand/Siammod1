@@ -45,6 +45,7 @@
             this.variance = new System.Windows.Forms.Label();
             this.math_average = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.indirect_try = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.indirect_period = new System.Windows.Forms.Label();
             this.indirect_length = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.indirect_try = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chart_graphic)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -75,7 +75,7 @@
             series2.Legend = "Legend1";
             series2.Name = "bar chart";
             this.chart_graphic.Series.Add(series2);
-            this.chart_graphic.Size = new System.Drawing.Size(501, 417);
+            this.chart_graphic.Size = new System.Drawing.Size(809, 570);
             this.chart_graphic.TabIndex = 0;
             // 
             // groupBox1
@@ -86,10 +86,10 @@
             this.groupBox1.Controls.Add(this.chart_graphic);
             this.groupBox1.Location = new System.Drawing.Point(1, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(546, 451);
+            this.groupBox1.Size = new System.Drawing.Size(854, 604);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Graphic";
             // 
             // groupBox2
             // 
@@ -102,9 +102,9 @@
             this.groupBox2.Controls.Add(this.textBox_R);
             this.groupBox2.Controls.Add(this.textBox_m);
             this.groupBox2.Controls.Add(this.textBox_a);
-            this.groupBox2.Location = new System.Drawing.Point(553, 12);
+            this.groupBox2.Location = new System.Drawing.Point(861, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(235, 172);
+            this.groupBox2.Size = new System.Drawing.Size(235, 325);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Parametrs";
@@ -213,21 +213,29 @@
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Location = new System.Drawing.Point(553, 180);
+            this.groupBox3.Location = new System.Drawing.Point(861, 180);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(235, 258);
+            this.groupBox3.Size = new System.Drawing.Size(235, 411);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "the required coefficients";
+            // 
+            // indirect_try
+            // 
+            this.indirect_try.AutoSize = true;
+            this.indirect_try.Location = new System.Drawing.Point(164, 220);
+            this.indirect_try.Name = "indirect_try";
+            this.indirect_try.Size = new System.Drawing.Size(0, 16);
+            this.indirect_try.TabIndex = 13;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(22, 220);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(85, 16);
+            this.label9.Size = new System.Drawing.Size(92, 16);
             this.label9.TabIndex = 12;
-            this.label9.Text = "Indirect signs";
+            this.label9.Text = "Indirect signs=";
             // 
             // indirect_period
             // 
@@ -268,18 +276,18 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(22, 146);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 16);
+            this.label6.Size = new System.Drawing.Size(54, 16);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Period";
+            this.label6.Text = "Period=";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(22, 185);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 16);
+            this.label5.Size = new System.Drawing.Size(54, 16);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Length";
+            this.label5.Text = "Length=";
             // 
             // label4
             // 
@@ -290,19 +298,11 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "math. expectation=";
             // 
-            // indirect_try
-            // 
-            this.indirect_try.AutoSize = true;
-            this.indirect_try.Location = new System.Drawing.Point(164, 220);
-            this.indirect_try.Name = "indirect_try";
-            this.indirect_try.Size = new System.Drawing.Size(0, 16);
-            this.indirect_try.TabIndex = 13;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1108, 603);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
