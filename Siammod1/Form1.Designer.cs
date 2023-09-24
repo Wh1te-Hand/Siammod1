@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea29 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend29 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series29 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea30 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend30 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series30 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea31 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend31 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series31 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea32 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend32 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series32 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea33 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend33 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series33 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea34 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend34 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series34 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea35 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend35 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series35 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl_1_2 = new System.Windows.Forms.TabControl();
             this.lab1 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -75,57 +75,38 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.chart_graphic = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.label_math_uniform = new System.Windows.Forms.Label();
+            this.label_variance_uniform = new System.Windows.Forms.Label();
+            this.label_RMS_uniform = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_calculate_uniform = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox_b_uniform = new System.Windows.Forms.TextBox();
+            this.textBox_a_uniform = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart_uniform = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
+            this.label_math_gauss = new System.Windows.Forms.Label();
+            this.label_variance_gauss = new System.Windows.Forms.Label();
+            this.label_RMS_gauss = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox_gauss_D = new System.Windows.Forms.TextBox();
+            this.textBox_m_gauss = new System.Windows.Forms.TextBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart_gauss = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
@@ -148,7 +129,8 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart_exponential = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
@@ -171,7 +153,8 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart_gamma = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
@@ -194,7 +177,8 @@
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
-            this.chart5 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart_triangle = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.label85 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
@@ -217,7 +201,7 @@
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
-            this.chart6 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart_simpson = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabControl_1_2.SuspendLayout();
             this.lab1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -225,35 +209,35 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_graphic)).BeginInit();
             this.tabPage2.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_uniform)).BeginInit();
+            this.tabPage1.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_gauss)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_exponential)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox14.SuspendLayout();
             this.groupBox15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_gamma)).BeginInit();
+            this.tabPage5.SuspendLayout();
             this.groupBox16.SuspendLayout();
             this.groupBox17.SuspendLayout();
             this.groupBox18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_triangle)).BeginInit();
+            this.tabPage6.SuspendLayout();
             this.groupBox19.SuspendLayout();
             this.groupBox20.SuspendLayout();
             this.groupBox21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_simpson)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl_1_2
@@ -512,16 +496,16 @@
             this.chart_graphic.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.chart_graphic.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart_graphic.Legends.Add(legend1);
+            chartArea29.Name = "ChartArea1";
+            this.chart_graphic.ChartAreas.Add(chartArea29);
+            legend29.Name = "Legend1";
+            this.chart_graphic.Legends.Add(legend29);
             this.chart_graphic.Location = new System.Drawing.Point(6, 23);
             this.chart_graphic.Name = "chart_graphic";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "bar chart";
-            this.chart_graphic.Series.Add(series1);
+            series29.ChartArea = "ChartArea1";
+            series29.Legend = "Legend1";
+            series29.Name = "bar chart";
+            this.chart_graphic.Series.Add(series29);
             this.chart_graphic.Size = new System.Drawing.Size(797, 526);
             this.chart_graphic.TabIndex = 0;
             // 
@@ -538,81 +522,15 @@
             this.tabPage2.Text = "lab2_uniform";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.groupBox7);
-            this.tabPage1.Controls.Add(this.groupBox8);
-            this.tabPage1.Controls.Add(this.groupBox9);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(1096, 571);
-            this.tabPage1.TabIndex = 2;
-            this.tabPage1.Text = "lab2_gauss";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.groupBox10);
-            this.tabPage3.Controls.Add(this.groupBox11);
-            this.tabPage3.Controls.Add(this.groupBox12);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1096, 571);
-            this.tabPage3.TabIndex = 3;
-            this.tabPage3.Text = "lab2_exponential";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.groupBox13);
-            this.tabPage4.Controls.Add(this.groupBox14);
-            this.tabPage4.Controls.Add(this.groupBox15);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1096, 571);
-            this.tabPage4.TabIndex = 4;
-            this.tabPage4.Text = "lab2_gamma";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.groupBox16);
-            this.tabPage5.Controls.Add(this.groupBox17);
-            this.tabPage5.Controls.Add(this.groupBox18);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1096, 571);
-            this.tabPage5.TabIndex = 5;
-            this.tabPage5.Text = "lab2_triangle";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.groupBox19);
-            this.tabPage6.Controls.Add(this.groupBox20);
-            this.tabPage6.Controls.Add(this.groupBox21);
-            this.tabPage6.Location = new System.Drawing.Point(4, 25);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1096, 571);
-            this.tabPage6.TabIndex = 6;
-            this.tabPage6.Text = "lab2_simpson";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
             // groupBox4
             // 
             this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.label11);
-            this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Controls.Add(this.label15);
-            this.groupBox4.Controls.Add(this.label16);
+            this.groupBox4.Controls.Add(this.label_math_uniform);
+            this.groupBox4.Controls.Add(this.label_variance_uniform);
+            this.groupBox4.Controls.Add(this.label_RMS_uniform);
             this.groupBox4.Controls.Add(this.label17);
             this.groupBox4.Controls.Add(this.label18);
-            this.groupBox4.Controls.Add(this.label19);
-            this.groupBox4.Controls.Add(this.label20);
             this.groupBox4.Controls.Add(this.label21);
             this.groupBox4.Location = new System.Drawing.Point(844, 199);
             this.groupBox4.Name = "groupBox4";
@@ -621,62 +539,29 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "the required coefficients";
             // 
-            // label10
+            // label_math_uniform
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(164, 220);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 16);
-            this.label10.TabIndex = 13;
+            this.label_math_uniform.AutoSize = true;
+            this.label_math_uniform.Location = new System.Drawing.Point(164, 37);
+            this.label_math_uniform.Name = "label_math_uniform";
+            this.label_math_uniform.Size = new System.Drawing.Size(0, 16);
+            this.label_math_uniform.TabIndex = 7;
             // 
-            // label11
+            // label_variance_uniform
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(22, 220);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(92, 16);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "Indirect signs=";
+            this.label_variance_uniform.AutoSize = true;
+            this.label_variance_uniform.Location = new System.Drawing.Point(164, 75);
+            this.label_variance_uniform.Name = "label_variance_uniform";
+            this.label_variance_uniform.Size = new System.Drawing.Size(0, 16);
+            this.label_variance_uniform.TabIndex = 8;
             // 
-            // label12
+            // label_RMS_uniform
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(164, 37);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(0, 16);
-            this.label12.TabIndex = 7;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(164, 75);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(0, 16);
-            this.label13.TabIndex = 8;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(164, 110);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(0, 16);
-            this.label14.TabIndex = 9;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(164, 146);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(0, 16);
-            this.label15.TabIndex = 10;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(164, 185);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(0, 16);
-            this.label16.TabIndex = 11;
+            this.label_RMS_uniform.AutoSize = true;
+            this.label_RMS_uniform.Location = new System.Drawing.Point(164, 110);
+            this.label_RMS_uniform.Name = "label_RMS_uniform";
+            this.label_RMS_uniform.Size = new System.Drawing.Size(0, 16);
+            this.label_RMS_uniform.TabIndex = 9;
             // 
             // label17
             // 
@@ -696,24 +581,6 @@
             this.label18.TabIndex = 3;
             this.label18.Text = "RMS=";
             // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(22, 146);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(54, 16);
-            this.label19.TabIndex = 2;
-            this.label19.Text = "Period=";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(22, 185);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(54, 16);
-            this.label20.TabIndex = 1;
-            this.label20.Text = "Length=";
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -727,13 +594,11 @@
             // 
             this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox5.Controls.Add(this.button1);
+            this.groupBox5.Controls.Add(this.button_calculate_uniform);
             this.groupBox5.Controls.Add(this.label22);
-            this.groupBox5.Controls.Add(this.label23);
             this.groupBox5.Controls.Add(this.label24);
-            this.groupBox5.Controls.Add(this.textBox1);
-            this.groupBox5.Controls.Add(this.textBox2);
-            this.groupBox5.Controls.Add(this.textBox3);
+            this.groupBox5.Controls.Add(this.textBox_b_uniform);
+            this.groupBox5.Controls.Add(this.textBox_a_uniform);
             this.groupBox5.Location = new System.Drawing.Point(844, 3);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(252, 190);
@@ -741,32 +606,24 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Parametrs";
             // 
-            // button1
+            // button_calculate_uniform
             // 
-            this.button1.Location = new System.Drawing.Point(148, 138);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "calculate";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_calculate_uniform.Location = new System.Drawing.Point(148, 138);
+            this.button_calculate_uniform.Name = "button_calculate_uniform";
+            this.button_calculate_uniform.Size = new System.Drawing.Size(75, 23);
+            this.button_calculate_uniform.TabIndex = 6;
+            this.button_calculate_uniform.Text = "calculate";
+            this.button_calculate_uniform.UseVisualStyleBackColor = true;
+            this.button_calculate_uniform.Click += new System.EventHandler(this.button_calculate_uniform_Click);
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(12, 61);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(24, 16);
+            this.label22.Size = new System.Drawing.Size(22, 16);
             this.label22.TabIndex = 5;
-            this.label22.Text = "R=";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(12, 101);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(25, 16);
-            this.label23.TabIndex = 4;
-            this.label23.Text = "m=";
+            this.label22.Text = "b=";
             // 
             // label24
             // 
@@ -777,33 +634,30 @@
             this.label24.TabIndex = 3;
             this.label24.Text = "a=";
             // 
-            // textBox1
+            // textBox_b_uniform
             // 
-            this.textBox1.Location = new System.Drawing.Point(40, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 22);
-            this.textBox1.TabIndex = 2;
+            this.textBox_b_uniform.Location = new System.Drawing.Point(40, 58);
+            this.textBox_b_uniform.Name = "textBox_b_uniform";
+            this.textBox_b_uniform.Size = new System.Drawing.Size(133, 22);
+            this.textBox_b_uniform.TabIndex = 2;
+            this.textBox_b_uniform.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_b_uniform_KeyPress);
+            this.textBox_b_uniform.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox_b_uniform_KeyUp);
             // 
-            // textBox2
+            // textBox_a_uniform
             // 
-            this.textBox2.Location = new System.Drawing.Point(40, 98);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(133, 22);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(40, 20);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(133, 22);
-            this.textBox3.TabIndex = 0;
+            this.textBox_a_uniform.Location = new System.Drawing.Point(40, 20);
+            this.textBox_a_uniform.Name = "textBox_a_uniform";
+            this.textBox_a_uniform.Size = new System.Drawing.Size(133, 22);
+            this.textBox_a_uniform.TabIndex = 0;
+            this.textBox_a_uniform.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_a_uniform_KeyPress);
+            this.textBox_a_uniform.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox_a_uniform_KeyUp);
             // 
             // groupBox6
             // 
             this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox6.Controls.Add(this.chart1);
+            this.groupBox6.Controls.Add(this.chart_uniform);
             this.groupBox6.Location = new System.Drawing.Point(1, 3);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(842, 562);
@@ -811,39 +665,45 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Graphic";
             // 
-            // chart1
+            // chart_uniform
             // 
-            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.chart_uniform.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(6, 23);
-            this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "bar chart";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(797, 526);
-            this.chart1.TabIndex = 0;
+            chartArea30.Name = "ChartArea1";
+            this.chart_uniform.ChartAreas.Add(chartArea30);
+            legend30.Name = "Legend1";
+            this.chart_uniform.Legends.Add(legend30);
+            this.chart_uniform.Location = new System.Drawing.Point(6, 23);
+            this.chart_uniform.Name = "chart_uniform";
+            series30.ChartArea = "ChartArea1";
+            series30.Legend = "Legend1";
+            series30.Name = "bar chart";
+            this.chart_uniform.Series.Add(series30);
+            this.chart_uniform.Size = new System.Drawing.Size(797, 526);
+            this.chart_uniform.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.groupBox7);
+            this.tabPage1.Controls.Add(this.groupBox8);
+            this.tabPage1.Controls.Add(this.groupBox9);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(1096, 571);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "lab2_gauss";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // groupBox7
             // 
             this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox7.Controls.Add(this.label25);
-            this.groupBox7.Controls.Add(this.label26);
-            this.groupBox7.Controls.Add(this.label27);
-            this.groupBox7.Controls.Add(this.label28);
-            this.groupBox7.Controls.Add(this.label29);
-            this.groupBox7.Controls.Add(this.label30);
-            this.groupBox7.Controls.Add(this.label31);
+            this.groupBox7.Controls.Add(this.label_math_gauss);
+            this.groupBox7.Controls.Add(this.label_variance_gauss);
+            this.groupBox7.Controls.Add(this.label_RMS_gauss);
             this.groupBox7.Controls.Add(this.label32);
             this.groupBox7.Controls.Add(this.label33);
-            this.groupBox7.Controls.Add(this.label34);
-            this.groupBox7.Controls.Add(this.label35);
             this.groupBox7.Controls.Add(this.label36);
             this.groupBox7.Location = new System.Drawing.Point(844, 199);
             this.groupBox7.Name = "groupBox7";
@@ -852,62 +712,29 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "the required coefficients";
             // 
-            // label25
+            // label_math_gauss
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(164, 220);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(0, 16);
-            this.label25.TabIndex = 13;
+            this.label_math_gauss.AutoSize = true;
+            this.label_math_gauss.Location = new System.Drawing.Point(164, 37);
+            this.label_math_gauss.Name = "label_math_gauss";
+            this.label_math_gauss.Size = new System.Drawing.Size(0, 16);
+            this.label_math_gauss.TabIndex = 7;
             // 
-            // label26
+            // label_variance_gauss
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(22, 220);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(92, 16);
-            this.label26.TabIndex = 12;
-            this.label26.Text = "Indirect signs=";
+            this.label_variance_gauss.AutoSize = true;
+            this.label_variance_gauss.Location = new System.Drawing.Point(164, 75);
+            this.label_variance_gauss.Name = "label_variance_gauss";
+            this.label_variance_gauss.Size = new System.Drawing.Size(0, 16);
+            this.label_variance_gauss.TabIndex = 8;
             // 
-            // label27
+            // label_RMS_gauss
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(164, 37);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(0, 16);
-            this.label27.TabIndex = 7;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(164, 75);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(0, 16);
-            this.label28.TabIndex = 8;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(164, 110);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(0, 16);
-            this.label29.TabIndex = 9;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(164, 146);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(0, 16);
-            this.label30.TabIndex = 10;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(164, 185);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(0, 16);
-            this.label31.TabIndex = 11;
+            this.label_RMS_gauss.AutoSize = true;
+            this.label_RMS_gauss.Location = new System.Drawing.Point(164, 110);
+            this.label_RMS_gauss.Name = "label_RMS_gauss";
+            this.label_RMS_gauss.Size = new System.Drawing.Size(0, 16);
+            this.label_RMS_gauss.TabIndex = 9;
             // 
             // label32
             // 
@@ -927,24 +754,6 @@
             this.label33.TabIndex = 3;
             this.label33.Text = "RMS=";
             // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(22, 146);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(54, 16);
-            this.label34.TabIndex = 2;
-            this.label34.Text = "Period=";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(22, 185);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(54, 16);
-            this.label35.TabIndex = 1;
-            this.label35.Text = "Length=";
-            // 
             // label36
             // 
             this.label36.AutoSize = true;
@@ -960,11 +769,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox8.Controls.Add(this.button2);
             this.groupBox8.Controls.Add(this.label37);
-            this.groupBox8.Controls.Add(this.label38);
             this.groupBox8.Controls.Add(this.label39);
-            this.groupBox8.Controls.Add(this.textBox4);
-            this.groupBox8.Controls.Add(this.textBox5);
-            this.groupBox8.Controls.Add(this.textBox6);
+            this.groupBox8.Controls.Add(this.textBox_gauss_D);
+            this.groupBox8.Controls.Add(this.textBox_m_gauss);
             this.groupBox8.Location = new System.Drawing.Point(844, 3);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(252, 190);
@@ -980,6 +787,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "calculate";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label37
             // 
@@ -988,53 +796,41 @@
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(24, 16);
             this.label37.TabIndex = 5;
-            this.label37.Text = "R=";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(12, 101);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(25, 16);
-            this.label38.TabIndex = 4;
-            this.label38.Text = "m=";
+            this.label37.Text = "D=";
             // 
             // label39
             // 
             this.label39.AutoSize = true;
             this.label39.Location = new System.Drawing.Point(12, 23);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(22, 16);
+            this.label39.Size = new System.Drawing.Size(25, 16);
             this.label39.TabIndex = 3;
-            this.label39.Text = "a=";
+            this.label39.Text = "m=";
             // 
-            // textBox4
+            // textBox_gauss_D
             // 
-            this.textBox4.Location = new System.Drawing.Point(40, 58);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(133, 22);
-            this.textBox4.TabIndex = 2;
+            this.textBox_gauss_D.Location = new System.Drawing.Point(40, 58);
+            this.textBox_gauss_D.Name = "textBox_gauss_D";
+            this.textBox_gauss_D.Size = new System.Drawing.Size(133, 22);
+            this.textBox_gauss_D.TabIndex = 2;
+            this.textBox_gauss_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_gauss_D_KeyPress);
+            this.textBox_gauss_D.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox_gauss_D_KeyUp);
             // 
-            // textBox5
+            // textBox_m_gauss
             // 
-            this.textBox5.Location = new System.Drawing.Point(40, 98);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(133, 22);
-            this.textBox5.TabIndex = 1;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(40, 20);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(133, 22);
-            this.textBox6.TabIndex = 0;
+            this.textBox_m_gauss.Location = new System.Drawing.Point(40, 20);
+            this.textBox_m_gauss.Name = "textBox_m_gauss";
+            this.textBox_m_gauss.Size = new System.Drawing.Size(133, 22);
+            this.textBox_m_gauss.TabIndex = 0;
+            this.textBox_m_gauss.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_m_gauss_KeyPress);
+            this.textBox_m_gauss.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox_m_gauss_KeyUp);
             // 
             // groupBox9
             // 
             this.groupBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox9.Controls.Add(this.chart2);
+            this.groupBox9.Controls.Add(this.chart_gauss);
             this.groupBox9.Location = new System.Drawing.Point(1, 3);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(842, 562);
@@ -1042,23 +838,35 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Graphic";
             // 
-            // chart2
+            // chart_gauss
             // 
-            this.chart2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.chart_gauss.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea3.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart2.Legends.Add(legend3);
-            this.chart2.Location = new System.Drawing.Point(6, 23);
-            this.chart2.Name = "chart2";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "bar chart";
-            this.chart2.Series.Add(series3);
-            this.chart2.Size = new System.Drawing.Size(797, 526);
-            this.chart2.TabIndex = 0;
+            chartArea31.Name = "ChartArea1";
+            this.chart_gauss.ChartAreas.Add(chartArea31);
+            legend31.Name = "Legend1";
+            this.chart_gauss.Legends.Add(legend31);
+            this.chart_gauss.Location = new System.Drawing.Point(6, 23);
+            this.chart_gauss.Name = "chart_gauss";
+            series31.ChartArea = "ChartArea1";
+            series31.Legend = "Legend1";
+            series31.Name = "bar chart";
+            this.chart_gauss.Series.Add(series31);
+            this.chart_gauss.Size = new System.Drawing.Size(797, 526);
+            this.chart_gauss.TabIndex = 0;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.groupBox10);
+            this.tabPage3.Controls.Add(this.groupBox11);
+            this.tabPage3.Controls.Add(this.groupBox12);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1096, 571);
+            this.tabPage3.TabIndex = 3;
+            this.tabPage3.Text = "lab2_exponential";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // groupBox10
             // 
@@ -1265,7 +1073,7 @@
             this.groupBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox12.Controls.Add(this.chart3);
+            this.groupBox12.Controls.Add(this.chart_exponential);
             this.groupBox12.Location = new System.Drawing.Point(1, 3);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Size = new System.Drawing.Size(842, 562);
@@ -1273,23 +1081,35 @@
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Graphic";
             // 
-            // chart3
+            // chart_exponential
             // 
-            this.chart3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.chart_exponential.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea4.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart3.Legends.Add(legend4);
-            this.chart3.Location = new System.Drawing.Point(6, 23);
-            this.chart3.Name = "chart3";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "bar chart";
-            this.chart3.Series.Add(series4);
-            this.chart3.Size = new System.Drawing.Size(797, 526);
-            this.chart3.TabIndex = 0;
+            chartArea32.Name = "ChartArea1";
+            this.chart_exponential.ChartAreas.Add(chartArea32);
+            legend32.Name = "Legend1";
+            this.chart_exponential.Legends.Add(legend32);
+            this.chart_exponential.Location = new System.Drawing.Point(6, 23);
+            this.chart_exponential.Name = "chart_exponential";
+            series32.ChartArea = "ChartArea1";
+            series32.Legend = "Legend1";
+            series32.Name = "bar chart";
+            this.chart_exponential.Series.Add(series32);
+            this.chart_exponential.Size = new System.Drawing.Size(797, 526);
+            this.chart_exponential.TabIndex = 0;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.groupBox13);
+            this.tabPage4.Controls.Add(this.groupBox14);
+            this.tabPage4.Controls.Add(this.groupBox15);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1096, 571);
+            this.tabPage4.TabIndex = 4;
+            this.tabPage4.Text = "lab2_gamma";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // groupBox13
             // 
@@ -1496,7 +1316,7 @@
             this.groupBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox15.Controls.Add(this.chart4);
+            this.groupBox15.Controls.Add(this.chart_gamma);
             this.groupBox15.Location = new System.Drawing.Point(1, 3);
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.Size = new System.Drawing.Size(842, 562);
@@ -1504,23 +1324,35 @@
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Graphic";
             // 
-            // chart4
+            // chart_gamma
             // 
-            this.chart4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.chart_gamma.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea5.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart4.Legends.Add(legend5);
-            this.chart4.Location = new System.Drawing.Point(6, 23);
-            this.chart4.Name = "chart4";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "bar chart";
-            this.chart4.Series.Add(series5);
-            this.chart4.Size = new System.Drawing.Size(797, 526);
-            this.chart4.TabIndex = 0;
+            chartArea33.Name = "ChartArea1";
+            this.chart_gamma.ChartAreas.Add(chartArea33);
+            legend33.Name = "Legend1";
+            this.chart_gamma.Legends.Add(legend33);
+            this.chart_gamma.Location = new System.Drawing.Point(6, 23);
+            this.chart_gamma.Name = "chart_gamma";
+            series33.ChartArea = "ChartArea1";
+            series33.Legend = "Legend1";
+            series33.Name = "bar chart";
+            this.chart_gamma.Series.Add(series33);
+            this.chart_gamma.Size = new System.Drawing.Size(797, 526);
+            this.chart_gamma.TabIndex = 0;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.groupBox16);
+            this.tabPage5.Controls.Add(this.groupBox17);
+            this.tabPage5.Controls.Add(this.groupBox18);
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(1096, 571);
+            this.tabPage5.TabIndex = 5;
+            this.tabPage5.Text = "lab2_triangle";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // groupBox16
             // 
@@ -1727,7 +1559,7 @@
             this.groupBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox18.Controls.Add(this.chart5);
+            this.groupBox18.Controls.Add(this.chart_triangle);
             this.groupBox18.Location = new System.Drawing.Point(1, 3);
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.Size = new System.Drawing.Size(842, 562);
@@ -1735,23 +1567,35 @@
             this.groupBox18.TabStop = false;
             this.groupBox18.Text = "Graphic";
             // 
-            // chart5
+            // chart_triangle
             // 
-            this.chart5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.chart_triangle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea6.Name = "ChartArea1";
-            this.chart5.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart5.Legends.Add(legend6);
-            this.chart5.Location = new System.Drawing.Point(6, 23);
-            this.chart5.Name = "chart5";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "bar chart";
-            this.chart5.Series.Add(series6);
-            this.chart5.Size = new System.Drawing.Size(797, 526);
-            this.chart5.TabIndex = 0;
+            chartArea34.Name = "ChartArea1";
+            this.chart_triangle.ChartAreas.Add(chartArea34);
+            legend34.Name = "Legend1";
+            this.chart_triangle.Legends.Add(legend34);
+            this.chart_triangle.Location = new System.Drawing.Point(6, 23);
+            this.chart_triangle.Name = "chart_triangle";
+            series34.ChartArea = "ChartArea1";
+            series34.Legend = "Legend1";
+            series34.Name = "bar chart";
+            this.chart_triangle.Series.Add(series34);
+            this.chart_triangle.Size = new System.Drawing.Size(797, 526);
+            this.chart_triangle.TabIndex = 0;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.groupBox19);
+            this.tabPage6.Controls.Add(this.groupBox20);
+            this.tabPage6.Controls.Add(this.groupBox21);
+            this.tabPage6.Location = new System.Drawing.Point(4, 25);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(1096, 571);
+            this.tabPage6.TabIndex = 6;
+            this.tabPage6.Text = "lab2_simpson";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // groupBox19
             // 
@@ -1958,7 +1802,7 @@
             this.groupBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox21.Controls.Add(this.chart6);
+            this.groupBox21.Controls.Add(this.chart_simpson);
             this.groupBox21.Location = new System.Drawing.Point(1, 3);
             this.groupBox21.Name = "groupBox21";
             this.groupBox21.Size = new System.Drawing.Size(842, 562);
@@ -1966,23 +1810,23 @@
             this.groupBox21.TabStop = false;
             this.groupBox21.Text = "Graphic";
             // 
-            // chart6
+            // chart_simpson
             // 
-            this.chart6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.chart_simpson.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea7.Name = "ChartArea1";
-            this.chart6.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.chart6.Legends.Add(legend7);
-            this.chart6.Location = new System.Drawing.Point(6, 23);
-            this.chart6.Name = "chart6";
-            series7.ChartArea = "ChartArea1";
-            series7.Legend = "Legend1";
-            series7.Name = "bar chart";
-            this.chart6.Series.Add(series7);
-            this.chart6.Size = new System.Drawing.Size(797, 526);
-            this.chart6.TabIndex = 0;
+            chartArea35.Name = "ChartArea1";
+            this.chart_simpson.ChartAreas.Add(chartArea35);
+            legend35.Name = "Legend1";
+            this.chart_simpson.Legends.Add(legend35);
+            this.chart_simpson.Location = new System.Drawing.Point(6, 23);
+            this.chart_simpson.Name = "chart_simpson";
+            series35.ChartArea = "ChartArea1";
+            series35.Legend = "Legend1";
+            series35.Name = "bar chart";
+            this.chart_simpson.Series.Add(series35);
+            this.chart_simpson.Size = new System.Drawing.Size(797, 526);
+            this.chart_simpson.TabIndex = 0;
             // 
             // Form1
             // 
@@ -2001,47 +1845,47 @@
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart_graphic)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_uniform)).EndInit();
+            this.tabPage1.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.groupBox9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_gauss)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             this.groupBox12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_exponential)).EndInit();
+            this.tabPage4.ResumeLayout(false);
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
             this.groupBox15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_gamma)).EndInit();
+            this.tabPage5.ResumeLayout(false);
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
             this.groupBox18.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_triangle)).EndInit();
+            this.tabPage6.ResumeLayout(false);
             this.groupBox19.ResumeLayout(false);
             this.groupBox19.PerformLayout();
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
             this.groupBox21.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_simpson)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2075,52 +1919,36 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_graphic;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label_math_uniform;
+        private System.Windows.Forms.Label label_variance_uniform;
+        private System.Windows.Forms.Label label_RMS_uniform;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_calculate_uniform;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox_b_uniform;
+        private System.Windows.Forms.TextBox textBox_a_uniform;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_uniform;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label_math_gauss;
+        private System.Windows.Forms.Label label_variance_gauss;
+        private System.Windows.Forms.Label label_RMS_gauss;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox_gauss_D;
+        private System.Windows.Forms.TextBox textBox_m_gauss;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_gauss;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Label label40;
@@ -2144,7 +1972,7 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_exponential;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.Label label55;
@@ -2168,7 +1996,7 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.GroupBox groupBox15;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart4;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_gamma;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.GroupBox groupBox16;
         private System.Windows.Forms.Label label70;
@@ -2192,7 +2020,7 @@
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.GroupBox groupBox18;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart5;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_triangle;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.GroupBox groupBox19;
         private System.Windows.Forms.Label label85;
@@ -2216,7 +2044,7 @@
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.GroupBox groupBox21;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart6;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_simpson;
     }
 }
 
