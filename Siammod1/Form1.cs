@@ -27,6 +27,8 @@ namespace Siammod1
         private double a_uniform=0, b_uniform=0;
         private double m_gauss = 0, d_gauss = 0;
         private double lambda_exponential = 0;
+        private double lambda_gamma = 0;
+        private long N_gamma = 0;
         public Form1()
         {
             InitializeComponent();
@@ -467,7 +469,6 @@ namespace Siammod1
                 e.Handled = true;
             }
         }
-
         private void textBox_b_uniform_KeyUp(object sender, KeyEventArgs e)
         {
             double N_number;
@@ -669,7 +670,112 @@ namespace Siammod1
                 this.chart_exponential.Series[0].Points.Clear(); //change
             }
         }
-//-------------------------------------------------lab_2_gamma------------------------------------
+        //-------------------------------------------------lab_2_gamma------------------------------------
+        private void button_calculate_gamma_Click(object sender, EventArgs e)
+        {
+            const long COUNT_OF_TRIALS = 50000;
+            double[] mas_v = gamma_generate(lambda_gamma,N_gamma, COUNT_OF_TRIALS); //change
+            if (mas_v.Length < 2)
+            {
+            }
+            else
+            {
+                double min = find_min_mass(mas_v);
+                double max = find_max_mass(mas_v);
+                long[] mas_y = find_dots_to_histogramma(min, max, k, mas_v);
+                double length = (max - min) / (double)k;
+                chart_gamma.Series[0].Points.Clear();//change
+                for (int i = 0; i < k; i++)
+                {
+                    chart_gamma.Series[0].Points.AddXY((min + length * (i + 1)) - 0.5 * length, (double)mas_y[i] / (double)COUNT_OF_TRIALS);
+                }
+                this.label_math_gamma.Text = (N_gamma / lambda_gamma).ToString();
+                this.label_variance_gamma.Text = (N_gamma*(1 / lambda_gamma) * (1 / lambda_gamma)).ToString();
+                this.label_RMS_gamma.Text = Math.Sqrt(N_gamma*(1 / lambda_gamma) * (1 / lambda_gamma)).ToString();
+            }
+        }
+        private double[] gamma_generate(double lambda,long N, long count)
+        {
+            double[] mas = new double[count];
+            Random rnd = new Random();
+            double var;
+            double x;
+            if ((lambda != 0)&&(N!=0))
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    var = rnd.NextDouble();
+                    for (int j = 1; j < N; j++) { 
+                    var=var* rnd.NextDouble();
+                    }
+                    x = ((-1) / lambda) * Math.Log(var, Math.E);
+                    mas[i] = x;
+                }
+                Array.Sort(mas);// may be should to change
+                return mas;
+            }
+            else
+                return new double[1];
+        }
+
+        private void textBox_lambda_gamma_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            String line = "";
+            if (!Char.IsDigit(number) && number != 8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox_lambda_gamma_KeyUp(object sender, KeyEventArgs e)
+        {
+            double N_number;
+            String line = "";
+            line = this.textBox_lambda_gamma.Text;  //change
+            if (line != "")
+            {
+                N_number = double.Parse(line);
+                if (N_number > 0 && N_number != double.NaN)
+                {
+                    lambda_gamma = N_number; //change
+                }
+            }
+            else
+            {
+                this.chart_gamma.Series[0].Points.Clear(); //change
+            }
+        }
+
+        private void textBox_N_gamma_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            String line = "";
+            if (!Char.IsDigit(number) && number != 8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox_N_gamma_KeyUp(object sender, KeyEventArgs e)
+        {
+            long N_number;
+            String line = "";
+            line = this.textBox_N_gamma.Text;  //change
+            if (line != "")
+            {
+                N_number = long.Parse(line);
+                if (N_number > 0 && N_number != double.NaN)
+                {
+                    N_gamma = N_number; //change
+                }
+            }
+            else
+            {
+                this.chart_gamma.Series[0].Points.Clear(); //change
+            }
+        }
+    //----------------------------------------------lab2_triangle---------------------------------------------
 
 
 

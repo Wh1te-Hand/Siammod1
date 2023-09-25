@@ -122,9 +122,9 @@
             this.chart_exponential = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.label = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
+            this.label_math_gamma = new System.Windows.Forms.Label();
+            this.label_variance_gamma = new System.Windows.Forms.Label();
+            this.label_RMS_gamma = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
@@ -138,26 +138,18 @@
             this.chart_gamma = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
             this.label82 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox_b_triangle = new System.Windows.Forms.TextBox();
+            this.textBox_a_triangle = new System.Windows.Forms.TextBox();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
             this.chart_triangle = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -184,6 +176,7 @@
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.chart_simpson = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.checkBox_min_max = new System.Windows.Forms.CheckBox();
             this.tabControl_1_2.SuspendLayout();
             this.lab1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -1007,9 +1000,9 @@
             // 
             this.groupBox13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox13.Controls.Add(this.label);
-            this.groupBox13.Controls.Add(this.label58);
-            this.groupBox13.Controls.Add(this.label59);
+            this.groupBox13.Controls.Add(this.label_math_gamma);
+            this.groupBox13.Controls.Add(this.label_variance_gamma);
+            this.groupBox13.Controls.Add(this.label_RMS_gamma);
             this.groupBox13.Controls.Add(this.label62);
             this.groupBox13.Controls.Add(this.label63);
             this.groupBox13.Controls.Add(this.label66);
@@ -1020,29 +1013,29 @@
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "the required coefficients";
             // 
-            // label
+            // label_math_gamma
             // 
-            this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(164, 37);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(0, 16);
-            this.label.TabIndex = 7;
+            this.label_math_gamma.AutoSize = true;
+            this.label_math_gamma.Location = new System.Drawing.Point(164, 37);
+            this.label_math_gamma.Name = "label_math_gamma";
+            this.label_math_gamma.Size = new System.Drawing.Size(0, 16);
+            this.label_math_gamma.TabIndex = 7;
             // 
-            // label58
+            // label_variance_gamma
             // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(164, 75);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(0, 16);
-            this.label58.TabIndex = 8;
+            this.label_variance_gamma.AutoSize = true;
+            this.label_variance_gamma.Location = new System.Drawing.Point(164, 75);
+            this.label_variance_gamma.Name = "label_variance_gamma";
+            this.label_variance_gamma.Size = new System.Drawing.Size(0, 16);
+            this.label_variance_gamma.TabIndex = 8;
             // 
-            // label59
+            // label_RMS_gamma
             // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(164, 110);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(0, 16);
-            this.label59.TabIndex = 9;
+            this.label_RMS_gamma.AutoSize = true;
+            this.label_RMS_gamma.Location = new System.Drawing.Point(164, 110);
+            this.label_RMS_gamma.Name = "label_RMS_gamma";
+            this.label_RMS_gamma.Size = new System.Drawing.Size(0, 16);
+            this.label_RMS_gamma.TabIndex = 9;
             // 
             // label62
             // 
@@ -1095,6 +1088,7 @@
             this.button_calculate_gamma.TabIndex = 6;
             this.button_calculate_gamma.Text = "calculate";
             this.button_calculate_gamma.UseVisualStyleBackColor = true;
+            this.button_calculate_gamma.Click += new System.EventHandler(this.button_calculate_gamma_Click);
             // 
             // label67
             // 
@@ -1120,6 +1114,8 @@
             this.textBox_N_gamma.Name = "textBox_N_gamma";
             this.textBox_N_gamma.Size = new System.Drawing.Size(133, 22);
             this.textBox_N_gamma.TabIndex = 2;
+            this.textBox_N_gamma.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_N_gamma_KeyPress);
+            this.textBox_N_gamma.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox_N_gamma_KeyUp);
             // 
             // textBox_lambda_gamma
             // 
@@ -1127,6 +1123,8 @@
             this.textBox_lambda_gamma.Name = "textBox_lambda_gamma";
             this.textBox_lambda_gamma.Size = new System.Drawing.Size(133, 22);
             this.textBox_lambda_gamma.TabIndex = 0;
+            this.textBox_lambda_gamma.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_lambda_gamma_KeyPress);
+            this.textBox_lambda_gamma.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox_lambda_gamma_KeyUp);
             // 
             // groupBox15
             // 
@@ -1175,17 +1173,11 @@
             // 
             this.groupBox16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox16.Controls.Add(this.label70);
-            this.groupBox16.Controls.Add(this.label71);
             this.groupBox16.Controls.Add(this.label72);
             this.groupBox16.Controls.Add(this.label73);
             this.groupBox16.Controls.Add(this.label74);
-            this.groupBox16.Controls.Add(this.label75);
-            this.groupBox16.Controls.Add(this.label76);
             this.groupBox16.Controls.Add(this.label77);
             this.groupBox16.Controls.Add(this.label78);
-            this.groupBox16.Controls.Add(this.label79);
-            this.groupBox16.Controls.Add(this.label80);
             this.groupBox16.Controls.Add(this.label81);
             this.groupBox16.Location = new System.Drawing.Point(844, 199);
             this.groupBox16.Name = "groupBox16";
@@ -1193,23 +1185,6 @@
             this.groupBox16.TabIndex = 9;
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "the required coefficients";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(164, 220);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(0, 16);
-            this.label70.TabIndex = 13;
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(22, 220);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(92, 16);
-            this.label71.TabIndex = 12;
-            this.label71.Text = "Indirect signs=";
             // 
             // label72
             // 
@@ -1235,22 +1210,6 @@
             this.label74.Size = new System.Drawing.Size(0, 16);
             this.label74.TabIndex = 9;
             // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(164, 146);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(0, 16);
-            this.label75.TabIndex = 10;
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(164, 185);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(0, 16);
-            this.label76.TabIndex = 11;
-            // 
             // label77
             // 
             this.label77.AutoSize = true;
@@ -1269,24 +1228,6 @@
             this.label78.TabIndex = 3;
             this.label78.Text = "RMS=";
             // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(22, 146);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(54, 16);
-            this.label79.TabIndex = 2;
-            this.label79.Text = "Period=";
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(22, 185);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(54, 16);
-            this.label80.TabIndex = 1;
-            this.label80.Text = "Length=";
-            // 
             // label81
             // 
             this.label81.AutoSize = true;
@@ -1300,13 +1241,12 @@
             // 
             this.groupBox17.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox17.Controls.Add(this.checkBox_min_max);
             this.groupBox17.Controls.Add(this.button5);
             this.groupBox17.Controls.Add(this.label82);
-            this.groupBox17.Controls.Add(this.label83);
             this.groupBox17.Controls.Add(this.label84);
-            this.groupBox17.Controls.Add(this.textBox13);
-            this.groupBox17.Controls.Add(this.textBox14);
-            this.groupBox17.Controls.Add(this.textBox15);
+            this.groupBox17.Controls.Add(this.textBox_b_triangle);
+            this.groupBox17.Controls.Add(this.textBox_a_triangle);
             this.groupBox17.Location = new System.Drawing.Point(844, 3);
             this.groupBox17.Name = "groupBox17";
             this.groupBox17.Size = new System.Drawing.Size(252, 190);
@@ -1328,18 +1268,9 @@
             this.label82.AutoSize = true;
             this.label82.Location = new System.Drawing.Point(12, 61);
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(24, 16);
+            this.label82.Size = new System.Drawing.Size(22, 16);
             this.label82.TabIndex = 5;
-            this.label82.Text = "R=";
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.Location = new System.Drawing.Point(12, 101);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(25, 16);
-            this.label83.TabIndex = 4;
-            this.label83.Text = "m=";
+            this.label82.Text = "b=";
             // 
             // label84
             // 
@@ -1350,26 +1281,19 @@
             this.label84.TabIndex = 3;
             this.label84.Text = "a=";
             // 
-            // textBox13
+            // textBox_b_triangle
             // 
-            this.textBox13.Location = new System.Drawing.Point(40, 58);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(133, 22);
-            this.textBox13.TabIndex = 2;
+            this.textBox_b_triangle.Location = new System.Drawing.Point(40, 58);
+            this.textBox_b_triangle.Name = "textBox_b_triangle";
+            this.textBox_b_triangle.Size = new System.Drawing.Size(133, 22);
+            this.textBox_b_triangle.TabIndex = 2;
             // 
-            // textBox14
+            // textBox_a_triangle
             // 
-            this.textBox14.Location = new System.Drawing.Point(40, 98);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(133, 22);
-            this.textBox14.TabIndex = 1;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(40, 20);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(133, 22);
-            this.textBox15.TabIndex = 0;
+            this.textBox_a_triangle.Location = new System.Drawing.Point(40, 20);
+            this.textBox_a_triangle.Name = "textBox_a_triangle";
+            this.textBox_a_triangle.Size = new System.Drawing.Size(133, 22);
+            this.textBox_a_triangle.TabIndex = 0;
             // 
             // groupBox18
             // 
@@ -1645,6 +1569,16 @@
             this.chart_simpson.Size = new System.Drawing.Size(797, 526);
             this.chart_simpson.TabIndex = 0;
             // 
+            // checkBox_min_max
+            // 
+            this.checkBox_min_max.AutoSize = true;
+            this.checkBox_min_max.Location = new System.Drawing.Point(40, 96);
+            this.checkBox_min_max.Name = "checkBox_min_max";
+            this.checkBox_min_max.Size = new System.Drawing.Size(88, 20);
+            this.checkBox_min_max.TabIndex = 7;
+            this.checkBox_min_max.Text = "min mode";
+            this.checkBox_min_max.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1782,9 +1716,9 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_exponential;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.GroupBox groupBox13;
-        private System.Windows.Forms.Label label;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label_math_gamma;
+        private System.Windows.Forms.Label label_variance_gamma;
+        private System.Windows.Forms.Label label_RMS_gamma;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label66;
@@ -1798,26 +1732,18 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_gamma;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.GroupBox groupBox16;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.Label label79;
-        private System.Windows.Forms.Label label80;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.GroupBox groupBox17;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.Label label83;
         private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox_b_triangle;
+        private System.Windows.Forms.TextBox textBox_a_triangle;
         private System.Windows.Forms.GroupBox groupBox18;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_triangle;
         private System.Windows.Forms.TabPage tabPage6;
@@ -1844,6 +1770,7 @@
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.GroupBox groupBox21;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_simpson;
+        private System.Windows.Forms.CheckBox checkBox_min_max;
     }
 }
 
