@@ -29,6 +29,8 @@ namespace Siammod1
         private double lambda_exponential = 0;
         private double lambda_gamma = 0;
         private long N_gamma = 0;
+        private Boolean min_mod = false;
+        private double a_triangle = 0, b_triangle = 0;
         public Form1()
         {
             InitializeComponent();
@@ -328,8 +330,8 @@ namespace Siammod1
         }
 
         private double find_min_mass(double[] mas) {
-            double result = 0;
-            for (int i = 0; i < mas.Length; i++)
+            double result = mas[0];
+            for (int i = 1; i < mas.Length; i++)
             {
                 if (result > mas[i])
                     result = mas[i];
@@ -348,8 +350,8 @@ namespace Siammod1
         }
         private double find_max_mass(double[] mas)
         {
-            double result = 0;
-            for (int i = 0; i < mas.Length; i++)
+            double result = mas[0];
+            for (int i = 1; i < mas.Length; i++)
             {
                 if (result < mas[i])
                     result = mas[i];
@@ -578,7 +580,6 @@ namespace Siammod1
                 e.Handled = true;
             }
         }
-
         private void textBox_gauss_D_KeyUp(object sender, KeyEventArgs e)
         {
             double N_number;
@@ -775,8 +776,153 @@ namespace Siammod1
                 this.chart_gamma.Series[0].Points.Clear(); //change
             }
         }
-    //----------------------------------------------lab2_triangle---------------------------------------------
+        //----------------------------------------------lab2_triangle---------------------------------------------
+        private void button_calculate_triangle_Click(object sender, EventArgs e)
+        {
+            const long COUNT_OF_TRIALS = 50000;
+            double[] mas_v = triangle_generate(a_triangle, b_triangle,min_mod, COUNT_OF_TRIALS); //change
+            if (mas_v.Length < 2)
+            {
+            }
+            else
+            {
+                double min = find_min_mass(mas_v);
+                double max = find_max_mass(mas_v);
+                long[] mas_y = find_dots_to_histogramma(min, max, k, mas_v);
+                double length = (max - min) / (double)k;
+               
+                chart_triangle.Series[0].Points.Clear();//change
+                for (int i = 0; i < k; i++)
+                {
+                    chart_triangle.Series[0].Points.AddXY((min + length * (i + 1)) - 0.5 * length, (double)mas_y[i] / (double)COUNT_OF_TRIALS);
+                }
+                double math = find_math_expectation(mas_v);
+                double variance = find_variance(mas_v, math);
+                this.label_math_triangle.Text = (math).ToString();
+                this.label_variance_triangle.Text = (variance).ToString();
+                this.label_RMS_triangle.Text = Math.Sqrt(variance).ToString();
+            }
+        }
 
+        private double find_math_expectation(double[]mas) {
+            double result = 0;
+            for (int i = 0; i < mas.Length; i++){
+                result += mas[i] / (double)mas.Length;
+            }
+            return result;
+        }
+
+        private double find_variance(double[] mas,double math) {
+            double result = 0;
+            for (int i = 0; i < mas.Length; i++) { 
+            result+=(mas[i]-math)* (mas[i] - math)/(double)mas.Length;
+            }
+            return result;
+        }
+        private double[] triangle_generate(double a, double b,Boolean min_mod, long count)
+        {
+            double[] mas = new double[count];
+            Random rnd = new Random();
+            double var1,var2;
+            double x;
+            if ((a != 0) && (b != 0))
+            {
+                if (min_mod)
+                {
+                    for (int i = 0; i < count; i++)
+                    {
+                        var1 = rnd.NextDouble();
+                        var2 = rnd.NextDouble();
+                        if (var1 < var2)
+                        {
+                            x = a + (b - a) * var2;
+                        }
+                        else { x = a + (b - a) * var1; }                        
+                        mas[i] = x;
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < count; i++)
+                    {
+                        var1 = rnd.NextDouble();
+                        var2 = rnd.NextDouble();
+                        if (var1 > var2)
+                        {
+                            x = a + (b - a) * var2;
+                        }
+                        else { x = a + (b - a) * var1; }
+                        mas[i] = x;
+                    }
+                }
+                Array.Sort(mas);// may be should to change
+                return mas;
+            }
+            else
+                return new double[1];
+        }
+        private void textBox_a_triangle_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            String line = "";
+            if (!Char.IsDigit(number) && number != 8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox_a_triangle_KeyUp(object sender, KeyEventArgs e)
+        {
+            long N_number;
+            String line = "";
+            line = this.textBox_a_triangle.Text;  //change
+            if (line != "")
+            {
+                N_number = long.Parse(line);
+                if (N_number > 0 && N_number != double.NaN)
+                {
+                    a_triangle = N_number; //change
+                }
+            }
+            else
+            {
+                this.chart_triangle.Series[0].Points.Clear(); //change
+            }
+        }
+
+        private void textBox_b_triangle_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            String line = "";
+            if (!Char.IsDigit(number) && number != 8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox_b_triangle_KeyUp(object sender, KeyEventArgs e)
+        {
+            long N_number;
+            String line = "";
+            line = this.textBox_b_triangle.Text;  //change
+            if (line != "")
+            {
+                N_number = long.Parse(line);
+                if (N_number > 0 && N_number != double.NaN)
+                {
+                    b_triangle = N_number; //change
+                }
+            }
+            else
+            {
+                this.chart_triangle.Series[0].Points.Clear(); //change
+            }
+        }
+
+        private void checkBox_min_max_CheckedChanged(object sender, EventArgs e)
+        {
+            min_mod = !min_mod;
+        }
 
 
     }
