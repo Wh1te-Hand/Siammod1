@@ -25,6 +25,7 @@ namespace Siammod1
         private double a, m, R, expectation, variance_num, RMS_num;
         private double xmin, xmax, rvar, length;
         private double a_uniform=0, b_uniform=0;
+        private double m_gauss = 0, d_gauss = 0;
         public Form1()
         {
             InitializeComponent();
@@ -268,30 +269,7 @@ namespace Siammod1
             return (i2-i1);
         }
 
-        private void textBox_m_gauss_KeyPress(object sender, KeyPressEventArgs e)
-        {
 
-        }
-
-        private void textBox_m_gauss_KeyUp(object sender, KeyEventArgs e)
-        {
-
-        }
-
-        private void textBox_gauss_D_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
-        private void textBox_gauss_D_KeyUp(object sender, KeyEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private long find_aperiodicity(long period) {
             const long V_NUMBER = 150000;
@@ -346,6 +324,15 @@ namespace Siammod1
             }
         }
 
+        private double find_min_mass(double[] mas) {
+            double result = 0;
+            for (int i = 0; i < mas.Length; i++)
+            {
+                if (result > mas[i])
+                    result = mas[i];
+            }
+            return result;
+        }
         private double check_max(double var) {
             if ((var / m) > xmax)
             {
@@ -355,6 +342,16 @@ namespace Siammod1
             {
                 return xmax;
             }
+        }
+        private double find_max_mass(double[] mas)
+        {
+            double result = 0;
+            for (int i = 0; i < mas.Length; i++)
+            {
+                if (result < mas[i])
+                    result = mas[i];
+            }
+            return result;
         }
 
         private long[] find_dots_to_histogramma(double a, double b, long count,double[] mas_start) {
@@ -403,7 +400,6 @@ namespace Siammod1
                     mas[i] = x;
                 }
                 Array.Sort(mas);// may be should to change
-               // mas.OrderBy(ms => ms.X);
                 return mas;
             }
             else
@@ -492,6 +488,116 @@ namespace Siammod1
         //----------------------------------------lab_2_gauss------------------------------------
 
 
+        private void button_calculate_gauss_Click(object sender, EventArgs e)
+        {
+            const long COUNT_OF_TRIALS = 50000;
+            double[] mas_v = gauss_generate(m_gauss,d_gauss, COUNT_OF_TRIALS);
+
+            if (mas_v.Length < 2)
+            {
+            }
+            else
+            {
+                double min = find_min_mass(mas_v);
+                double max = find_max_mass(mas_v);
+                long[] mas_y = find_dots_to_histogramma(min, max, k, mas_v);
+                double length = (max - min) / (double)k;
+                chart_gauss.Series[0].Points.Clear();
+                for (int i = 0; i < k; i++)
+                {
+                    chart_gauss.Series[0].Points.AddXY((min + length * (i + 1)) - 0.5 * length, (double)mas_y[i] / (double)COUNT_OF_TRIALS);
+                }
+                this.label_math_gauss.Text = (m_gauss).ToString();
+                this.label_variance_gauss.Text = (d_gauss).ToString();
+                this.label_RMS_gauss.Text = Math.Sqrt(d_gauss).ToString();
+            }
+        }
+
+        private double[] gauss_generate(double m, double d, long count)
+        {
+            double[] mas = new double[count];
+            Random rnd = new Random();
+            double var;
+            double x;
+            if ( (m != 0) && (d != 0))
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    double sum = 0;
+                    for (int j = 0; j < 6; j++) {
+                        sum +=  rnd.NextDouble(); 
+                    }
+                    x = m +d*Math.Sqrt(2)*(sum-3);
+                    mas[i] = x;
+                }
+                Array.Sort(mas);// may be should to change
+                return mas;
+            }
+            else
+                return new double[1];
+        }
+
+        private void textBox_m_gauss_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            String line = "";
+            if (!Char.IsDigit(number) && number != 8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox_m_gauss_KeyUp(object sender, KeyEventArgs e)
+        {
+            double N_number;
+            String line = "";
+            line = this.textBox_m_gauss.Text;  //change
+            if (line != "")
+            {
+                N_number = double.Parse(line);
+                if (N_number > 0 && N_number != double.NaN)
+                {
+                    m_gauss = N_number; //change
+                }
+            }
+            else
+            {
+                this.chart_gauss.Series[0].Points.Clear(); //change
+            }
+        
+        }
+
+        private void textBox_gauss_D_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            String line = "";
+            if (!Char.IsDigit(number) && number != 8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox_gauss_D_KeyUp(object sender, KeyEventArgs e)
+        {
+            double N_number;
+            String line = "";
+            line = this.textBox_gauss_D.Text;  //change
+            if (line != "")
+            {
+                N_number = double.Parse(line);
+                if (N_number > 0 && N_number != double.NaN)
+                {
+                    d_gauss = N_number; //change
+                }
+            }
+            else
+            {
+                this.chart_gauss.Series[0].Points.Clear(); //change
+            }
+        
+        }
+
+ 
 
     }
 
