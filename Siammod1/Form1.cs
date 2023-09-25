@@ -26,6 +26,7 @@ namespace Siammod1
         private double xmin, xmax, rvar, length;
         private double a_uniform=0, b_uniform=0;
         private double m_gauss = 0, d_gauss = 0;
+        private double lambda_exponential = 0;
         public Form1()
         {
             InitializeComponent();
@@ -596,8 +597,81 @@ namespace Siammod1
             }
         
         }
+        //---------------------------------------------lab_2_exponential---------------------------------
+        private void button_calculate_exponential_Click(object sender, EventArgs e)
+        {
+            const long COUNT_OF_TRIALS = 50000;
+            double[] mas_v = exponential_generate(lambda_exponential, COUNT_OF_TRIALS); //change
+            if (mas_v.Length < 2)
+            {
+            }
+            else
+            {
+                double min = find_min_mass(mas_v);
+                double max = find_max_mass(mas_v);
+                long[] mas_y = find_dots_to_histogramma(min, max, k, mas_v);
+                double length = (max - min) / (double)k;
+                chart_exponential.Series[0].Points.Clear();//change
+                for (int i = 0; i < k; i++)
+                {
+                    chart_exponential.Series[0].Points.AddXY((min + length * (i + 1)) - 0.5 * length, (double)mas_y[i] / (double)COUNT_OF_TRIALS);
+                }
+                this.label_math_exponential.Text = (1/lambda_exponential).ToString();
+                this.label_variance_exponential.Text = ((1 / lambda_exponential)* (1 / lambda_exponential)).ToString();
+                this.label_RMS_exponential.Text = Math.Sqrt((1 / lambda_exponential) * (1 / lambda_exponential)).ToString();
+            }
+        }
+        private double[] exponential_generate(double lambda, long count)
+        {
+            double[] mas = new double[count];
+            Random rnd = new Random();
+            double var;
+            double x;
+            if (lambda!=0)
+            {
+                for (int i = 0; i < count; i++)
+                {                     
+                    var = rnd.NextDouble();                    
+                    x = ((-1)/lambda)*Math.Log(var,Math.E);
+                    mas[i] = x;
+                }
+                Array.Sort(mas);// may be should to change
+                return mas;
+            }
+            else
+                return new double[1];
+        }
+        private void textBox_lambda_exponential_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            String line = "";
+            if (!Char.IsDigit(number) && number != 8)
+            {
+                e.Handled = true;
+            }
+        }
 
- 
+        private void textBox_lambda_exponential_KeyUp(object sender, KeyEventArgs e)
+        {
+            double N_number;
+            String line = "";
+            line = this.textBox_lambda_exponential.Text;  //change
+            if (line != "")
+            {
+                N_number = double.Parse(line);
+                if (N_number > 0 && N_number != double.NaN)
+                {
+                    lambda_exponential = N_number; //change
+                }
+            }
+            else
+            {
+                this.chart_exponential.Series[0].Points.Clear(); //change
+            }
+        }
+//-------------------------------------------------lab_2_gamma------------------------------------
+
+
 
     }
 
