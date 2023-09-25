@@ -154,26 +154,18 @@
             this.chart_triangle = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.label85 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
-            this.label88 = new System.Windows.Forms.Label();
-            this.label89 = new System.Windows.Forms.Label();
-            this.label90 = new System.Windows.Forms.Label();
-            this.label91 = new System.Windows.Forms.Label();
+            this.label_math_simpson = new System.Windows.Forms.Label();
+            this.label_variance_simpson = new System.Windows.Forms.Label();
+            this.label_RMS_simpson = new System.Windows.Forms.Label();
             this.label92 = new System.Windows.Forms.Label();
             this.label93 = new System.Windows.Forms.Label();
-            this.label94 = new System.Windows.Forms.Label();
-            this.label95 = new System.Windows.Forms.Label();
             this.label96 = new System.Windows.Forms.Label();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.button_calculate_simpson = new System.Windows.Forms.Button();
             this.label97 = new System.Windows.Forms.Label();
-            this.label98 = new System.Windows.Forms.Label();
             this.label99 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox_b_simpson = new System.Windows.Forms.TextBox();
+            this.textBox_a_simpson = new System.Windows.Forms.TextBox();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.chart_simpson = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.checkBox_min_max = new System.Windows.Forms.CheckBox();
@@ -1347,17 +1339,11 @@
             // 
             this.groupBox19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox19.Controls.Add(this.label85);
-            this.groupBox19.Controls.Add(this.label86);
-            this.groupBox19.Controls.Add(this.label87);
-            this.groupBox19.Controls.Add(this.label88);
-            this.groupBox19.Controls.Add(this.label89);
-            this.groupBox19.Controls.Add(this.label90);
-            this.groupBox19.Controls.Add(this.label91);
+            this.groupBox19.Controls.Add(this.label_math_simpson);
+            this.groupBox19.Controls.Add(this.label_variance_simpson);
+            this.groupBox19.Controls.Add(this.label_RMS_simpson);
             this.groupBox19.Controls.Add(this.label92);
             this.groupBox19.Controls.Add(this.label93);
-            this.groupBox19.Controls.Add(this.label94);
-            this.groupBox19.Controls.Add(this.label95);
             this.groupBox19.Controls.Add(this.label96);
             this.groupBox19.Location = new System.Drawing.Point(844, 199);
             this.groupBox19.Name = "groupBox19";
@@ -1366,62 +1352,29 @@
             this.groupBox19.TabStop = false;
             this.groupBox19.Text = "the required coefficients";
             // 
-            // label85
+            // label_math_simpson
             // 
-            this.label85.AutoSize = true;
-            this.label85.Location = new System.Drawing.Point(164, 220);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(0, 16);
-            this.label85.TabIndex = 13;
+            this.label_math_simpson.AutoSize = true;
+            this.label_math_simpson.Location = new System.Drawing.Point(164, 37);
+            this.label_math_simpson.Name = "label_math_simpson";
+            this.label_math_simpson.Size = new System.Drawing.Size(0, 16);
+            this.label_math_simpson.TabIndex = 7;
             // 
-            // label86
+            // label_variance_simpson
             // 
-            this.label86.AutoSize = true;
-            this.label86.Location = new System.Drawing.Point(22, 220);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(92, 16);
-            this.label86.TabIndex = 12;
-            this.label86.Text = "Indirect signs=";
+            this.label_variance_simpson.AutoSize = true;
+            this.label_variance_simpson.Location = new System.Drawing.Point(164, 75);
+            this.label_variance_simpson.Name = "label_variance_simpson";
+            this.label_variance_simpson.Size = new System.Drawing.Size(0, 16);
+            this.label_variance_simpson.TabIndex = 8;
             // 
-            // label87
+            // label_RMS_simpson
             // 
-            this.label87.AutoSize = true;
-            this.label87.Location = new System.Drawing.Point(164, 37);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(0, 16);
-            this.label87.TabIndex = 7;
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Location = new System.Drawing.Point(164, 75);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(0, 16);
-            this.label88.TabIndex = 8;
-            // 
-            // label89
-            // 
-            this.label89.AutoSize = true;
-            this.label89.Location = new System.Drawing.Point(164, 110);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(0, 16);
-            this.label89.TabIndex = 9;
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Location = new System.Drawing.Point(164, 146);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(0, 16);
-            this.label90.TabIndex = 10;
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Location = new System.Drawing.Point(164, 185);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(0, 16);
-            this.label91.TabIndex = 11;
+            this.label_RMS_simpson.AutoSize = true;
+            this.label_RMS_simpson.Location = new System.Drawing.Point(164, 110);
+            this.label_RMS_simpson.Name = "label_RMS_simpson";
+            this.label_RMS_simpson.Size = new System.Drawing.Size(0, 16);
+            this.label_RMS_simpson.TabIndex = 9;
             // 
             // label92
             // 
@@ -1441,24 +1394,6 @@
             this.label93.TabIndex = 3;
             this.label93.Text = "RMS=";
             // 
-            // label94
-            // 
-            this.label94.AutoSize = true;
-            this.label94.Location = new System.Drawing.Point(22, 146);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(54, 16);
-            this.label94.TabIndex = 2;
-            this.label94.Text = "Period=";
-            // 
-            // label95
-            // 
-            this.label95.AutoSize = true;
-            this.label95.Location = new System.Drawing.Point(22, 185);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(54, 16);
-            this.label95.TabIndex = 1;
-            this.label95.Text = "Length=";
-            // 
             // label96
             // 
             this.label96.AutoSize = true;
@@ -1472,13 +1407,11 @@
             // 
             this.groupBox20.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox20.Controls.Add(this.button6);
+            this.groupBox20.Controls.Add(this.button_calculate_simpson);
             this.groupBox20.Controls.Add(this.label97);
-            this.groupBox20.Controls.Add(this.label98);
             this.groupBox20.Controls.Add(this.label99);
-            this.groupBox20.Controls.Add(this.textBox16);
-            this.groupBox20.Controls.Add(this.textBox17);
-            this.groupBox20.Controls.Add(this.textBox18);
+            this.groupBox20.Controls.Add(this.textBox_b_simpson);
+            this.groupBox20.Controls.Add(this.textBox_a_simpson);
             this.groupBox20.Location = new System.Drawing.Point(844, 3);
             this.groupBox20.Name = "groupBox20";
             this.groupBox20.Size = new System.Drawing.Size(252, 190);
@@ -1486,32 +1419,24 @@
             this.groupBox20.TabStop = false;
             this.groupBox20.Text = "Parametrs";
             // 
-            // button6
+            // button_calculate_simpson
             // 
-            this.button6.Location = new System.Drawing.Point(148, 138);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "calculate";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button_calculate_simpson.Location = new System.Drawing.Point(148, 138);
+            this.button_calculate_simpson.Name = "button_calculate_simpson";
+            this.button_calculate_simpson.Size = new System.Drawing.Size(75, 23);
+            this.button_calculate_simpson.TabIndex = 6;
+            this.button_calculate_simpson.Text = "calculate";
+            this.button_calculate_simpson.UseVisualStyleBackColor = true;
+            this.button_calculate_simpson.Click += new System.EventHandler(this.button_calculate_simpson_Click);
             // 
             // label97
             // 
             this.label97.AutoSize = true;
             this.label97.Location = new System.Drawing.Point(12, 61);
             this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(24, 16);
+            this.label97.Size = new System.Drawing.Size(22, 16);
             this.label97.TabIndex = 5;
-            this.label97.Text = "R=";
-            // 
-            // label98
-            // 
-            this.label98.AutoSize = true;
-            this.label98.Location = new System.Drawing.Point(12, 101);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(25, 16);
-            this.label98.TabIndex = 4;
-            this.label98.Text = "m=";
+            this.label97.Text = "b=";
             // 
             // label99
             // 
@@ -1522,26 +1447,23 @@
             this.label99.TabIndex = 3;
             this.label99.Text = "a=";
             // 
-            // textBox16
+            // textBox_b_simpson
             // 
-            this.textBox16.Location = new System.Drawing.Point(40, 58);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(133, 22);
-            this.textBox16.TabIndex = 2;
+            this.textBox_b_simpson.Location = new System.Drawing.Point(40, 58);
+            this.textBox_b_simpson.Name = "textBox_b_simpson";
+            this.textBox_b_simpson.Size = new System.Drawing.Size(133, 22);
+            this.textBox_b_simpson.TabIndex = 2;
+            this.textBox_b_simpson.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_b_simpson_KeyPress);
+            this.textBox_b_simpson.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox_b_simpson_KeyUp);
             // 
-            // textBox17
+            // textBox_a_simpson
             // 
-            this.textBox17.Location = new System.Drawing.Point(40, 98);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(133, 22);
-            this.textBox17.TabIndex = 1;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(40, 20);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(133, 22);
-            this.textBox18.TabIndex = 0;
+            this.textBox_a_simpson.Location = new System.Drawing.Point(40, 20);
+            this.textBox_a_simpson.Name = "textBox_a_simpson";
+            this.textBox_a_simpson.Size = new System.Drawing.Size(133, 22);
+            this.textBox_a_simpson.TabIndex = 0;
+            this.textBox_a_simpson.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_a_simpson_KeyPress);
+            this.textBox_a_simpson.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox_a_simpson_KeyUp);
             // 
             // groupBox21
             // 
@@ -1754,26 +1676,18 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_triangle;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.GroupBox groupBox19;
-        private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.Label label86;
-        private System.Windows.Forms.Label label87;
-        private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.Label label89;
-        private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.Label label_math_simpson;
+        private System.Windows.Forms.Label label_variance_simpson;
+        private System.Windows.Forms.Label label_RMS_simpson;
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Label label93;
-        private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.Label label95;
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.GroupBox groupBox20;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button_calculate_simpson;
         private System.Windows.Forms.Label label97;
-        private System.Windows.Forms.Label label98;
         private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBox_b_simpson;
+        private System.Windows.Forms.TextBox textBox_a_simpson;
         private System.Windows.Forms.GroupBox groupBox21;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_simpson;
         private System.Windows.Forms.CheckBox checkBox_min_max;

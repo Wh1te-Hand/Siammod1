@@ -31,6 +31,7 @@ namespace Siammod1
         private long N_gamma = 0;
         private Boolean min_mod = false;
         private double a_triangle = 0, b_triangle = 0;
+        private double a_simpson = 0, b_simpson = 0;
         public Form1()
         {
             InitializeComponent();
@@ -728,7 +729,6 @@ namespace Siammod1
                 e.Handled = true;
             }
         }
-
         private void textBox_lambda_gamma_KeyUp(object sender, KeyEventArgs e)
         {
             double N_number;
@@ -924,7 +924,116 @@ namespace Siammod1
             min_mod = !min_mod;
         }
 
+        //--------------------------------------------------------lab2_simpson-------------------------------
+        private void button_calculate_simpson_Click(object sender, EventArgs e)
+        {
+            const long COUNT_OF_TRIALS = 50000;
+            double[] mas_v = simpson_generate(a_simpson, b_simpson, COUNT_OF_TRIALS);
+            if (mas_v.Length < 2)
+            {
+            }
+            else
+            {
+                double min = find_min_mass(mas_v);
+                double max = find_max_mass(mas_v);
+                long[] mas_y = find_dots_to_histogramma(min, max, k, mas_v);
+                double length = (max - min) / (double)k;
 
+                chart_simpson.Series[0].Points.Clear();//change
+                for (int i = 0; i < k; i++)
+                {
+                    chart_simpson.Series[0].Points.AddXY((min + length * (i + 1)) - 0.5 * length, (double)mas_y[i] / (double)COUNT_OF_TRIALS);
+                }
+                double math = find_math_expectation(mas_v);
+                double variance = find_variance(mas_v, math);
+                this.label_math_simpson.Text = (math).ToString();
+                this.label_variance_simpson.Text = (variance).ToString();
+                this.label_RMS_simpson.Text = Math.Sqrt(variance).ToString();
+            }
+        }
+
+        private double[] simpson_generate(double a, double b, long count)
+        {
+            double[] mas = new double[count];
+            Random rnd = new Random();
+            double var;
+            double z, y;
+            double x;
+            if ((a < b) && (a != 0) && (b != 0))
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    var = rnd.NextDouble();
+                    z = a/ (double)2 + (b/ (double)2 - a/(double)2) * var;
+                    var = rnd.NextDouble();
+                    y = a / (double)2 + (b / (double)2 - a / (double)2) * var;
+                    x = y + z;
+                    mas[i] = x;
+                }
+                Array.Sort(mas);// may be should to change
+                return mas;
+            }
+            else
+                return new double[1];
+        }
+
+        private void textBox_a_simpson_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            String line = "";
+            if (!Char.IsDigit(number) && number != 8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox_a_simpson_KeyUp(object sender, KeyEventArgs e)
+        {
+            long N_number;
+            String line = "";
+            line = this.textBox_a_simpson.Text;  //change
+            if (line != "")
+            {
+                N_number = long.Parse(line);
+                if (N_number > 0 && N_number != double.NaN)
+                {
+                    a_simpson = N_number; //change
+                }
+            }
+            else
+            {
+                this.chart_simpson.Series[0].Points.Clear(); //change
+            }
+        }
+
+        private void textBox_b_simpson_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            String line = "";
+            if (!Char.IsDigit(number) && number != 8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox_b_simpson_KeyUp(object sender, KeyEventArgs e)
+        {
+            long N_number;
+            String line = "";
+            line = this.textBox_b_simpson.Text;  //change
+            if (line != "")
+            {
+                N_number = long.Parse(line);
+                if (N_number > 0 && N_number != double.NaN)
+                {
+                    b_simpson = N_number; //change
+                }
+            }
+            else
+            {
+                this.chart_simpson.Series[0].Points.Clear(); //change
+            }
+        }
     }
 
 }
