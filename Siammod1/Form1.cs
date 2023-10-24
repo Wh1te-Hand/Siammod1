@@ -230,7 +230,7 @@ namespace Siammod1
         }
 
         private long find_period() {
-            const long V_NUMBER = 150000;
+            const long V_NUMBER = 300000;
             double Rres = 0;
             double Rvar = 0;
             double x_v=0;
@@ -278,7 +278,7 @@ namespace Siammod1
 
 
         private long find_aperiodicity(long period) {
-            const long V_NUMBER = 150000;
+            const long V_NUMBER = 300000;
             double xp = 0;
             double x0 = R;
             double Rres=0;
@@ -316,7 +316,7 @@ namespace Siammod1
                 flag= false;
                 }
             }
-
+            if (i3 > 0) { i3--; }
             return (period+i3);
         }
         private double check_min(double var) {
@@ -811,7 +811,6 @@ namespace Siammod1
             }
             return result;
         }
-
         private double find_variance(double[] mas,double math) {
             double result = 0;
             for (int i = 0; i < mas.Length; i++) { 
@@ -861,6 +860,7 @@ namespace Siammod1
             else
                 return new double[1];
         }
+
         private void textBox_a_triangle_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
@@ -1034,6 +1034,61 @@ namespace Siammod1
                 this.chart_simpson.Series[0].Points.Clear(); //change
             }
         }
-    }
 
+        //-----------------------------------------------------lab4-------------------------------------------------------
+        long lab4_time =0;
+        private void textBox_lab4_Time_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            String line = "";
+            if (!Char.IsDigit(number) && number != 8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox_lab4_Time_KeyUp(object sender, KeyEventArgs e)
+        {
+            long N_number;
+            String line = "";
+            line = this.textBox_lab4_Time.Text;  //change
+            if (line != "")
+            {
+                N_number = long.Parse(line);
+                if (N_number > 0 && N_number != double.NaN)
+                {
+                    lab4_time = N_number; //change
+                }
+            }
+            else
+            {
+                lab4_time=0; //change
+            }
+
+        }
+
+        private void button_lab4_calculate_Click(object sender, EventArgs e)
+        {
+            const double INTENSITY_GENERATOR = 80;
+            const double INTENSITY_CHANNEL11 = 20;
+            const double INTENSITY_CHANNEL12 = 60;
+            const double INTENSITY_CHANNEL21 = 40;
+            const double INTENSITY_CHANNEL22 = 40;
+
+            Generator_lab4 generator = new Generator_lab4(INTENSITY_GENERATOR);
+            Channel channel1 = new Channel(INTENSITY_CHANNEL11, INTENSITY_CHANNEL12);
+            Channel channel2 = new Channel(INTENSITY_CHANNEL21, INTENSITY_CHANNEL22);
+            double total_time = 0;
+            double time_before_event = 0;
+            int state = 0;
+            while (total_time<=lab4_time) {
+
+                if (state == 0) {
+                    generator.tact
+                }
+
+            }
+        }
+
+    }
 }
