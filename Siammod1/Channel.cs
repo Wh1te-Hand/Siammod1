@@ -9,8 +9,8 @@ namespace Siammod1
     public class Channel
     {
         double intensity1, intensity2;
-        private long time_busy = 0;
-        private long time_free = 0;
+        private double time_busy = 0;
+        private double time_free = 0;
         Boolean employed = false;
         private Random rand = new Random();
 
@@ -19,15 +19,15 @@ namespace Siammod1
             this.intensity1 = intensity1;
             this.intensity2 = intensity2;
         }
-        public long timeWork
+        public double timeWork
         {
             get => time_busy;
-            set => time_busy = value;
+/*            set => time_busy = value;*/
         }
-        public long timeFree
+        public double timeFree
         {
             get => time_free;
-            set => time_free = value;
+/*            set => time_free = value;*/
         }
 
         public Boolean Employed
@@ -51,7 +51,19 @@ namespace Siammod1
                 var = rnd.NextDouble();
                 result = ((-1) / intensity2) * Math.Log(var, Math.E);
             }
+            employed = true;
             return result;
+        }
+
+        public void calculate_time(double time) {
+            if (employed)
+            {
+                time_busy += time;
+            }
+            else
+            {
+                time_free += time;
+            }
         }
     }
 }

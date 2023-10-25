@@ -1079,15 +1079,67 @@ namespace Siammod1
             Channel channel1 = new Channel(INTENSITY_CHANNEL11, INTENSITY_CHANNEL12);
             Channel channel2 = new Channel(INTENSITY_CHANNEL21, INTENSITY_CHANNEL22);
             double total_time = 0;
+            double time_source = 0;
+            double time_channel1 = double.MaxValue;
+            double time_channel2 = double.MaxValue;
             double time_before_event = 0;
             int state = 0;
             while (total_time<=lab4_time) {
 
-                if (state == 0) {
-                    generator.tact
-                }
+                if (state == 0)
+                {
+                    time_source = generator.Tact();
 
+                    if (!channel1.Employed)
+                    {
+                        time_channel1 = channel1.Solve();
+                    }
+                    else if (!channel2.Employed)
+                    {
+                        time_channel2 = channel2.Solve();
+                    }
+                }
+                else if (state == 1) 
+                {
+                    channel1.Employed = false;
+                    time_channel1 = double.MaxValue;
+                }
+                else if (state == 2)
+                {
+                    channel2.Employed = false;
+                    time_channel2 = double.MaxValue;
+                }
+                state=find_min_state(time_source,time_channel1,time_channel2);
+                time_before_event = find_min_time(time_source, time_channel1, time_channel2);
+                total_time += time_before_event;
+                channel1.calculate_time(time_before_event);
+                channel2.calculate_time(time_before_event);
             }
+        }
+
+        private int find_min_state(double source, double channel1, double channel2) {
+            if ((source <= channel1) && (source <= channel2))
+            {
+                return 0;
+            }
+            else if ((channel1 <= source) && (channel1 <= channel2)) 
+            {
+                return 1;
+            }
+            else { return 2; }
+         }
+
+        private double find_min_time(double source, double channel1, double channel2)
+        {
+            if ((source <= channel1) && (source <= channel2))
+            {
+                return source;
+            }
+            else if ((channel1 <= source) && (channel1 <= channel2))
+            {
+                return channel1;
+            }
+            else { return channel2; }
         }
 
     }
