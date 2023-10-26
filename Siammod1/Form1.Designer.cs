@@ -171,11 +171,11 @@
             this.chart_simpson = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
-            this.label_lab4_w2 = new System.Windows.Forms.Label();
+            this.label_lab4_W2 = new System.Windows.Forms.Label();
             this.label_lab4_L2 = new System.Windows.Forms.Label();
             this.label_lab4_L1 = new System.Windows.Forms.Label();
             this.label_lab4_W1 = new System.Windows.Forms.Label();
-            this.label_lab4_4 = new System.Windows.Forms.Label();
+            this.label_lab4_W = new System.Windows.Forms.Label();
             this.label_lab4_L = new System.Windows.Forms.Label();
             this.label_lab4_A = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -1544,11 +1544,11 @@
             // 
             // groupBox22
             // 
-            this.groupBox22.Controls.Add(this.label_lab4_w2);
+            this.groupBox22.Controls.Add(this.label_lab4_W2);
             this.groupBox22.Controls.Add(this.label_lab4_L2);
             this.groupBox22.Controls.Add(this.label_lab4_L1);
             this.groupBox22.Controls.Add(this.label_lab4_W1);
-            this.groupBox22.Controls.Add(this.label_lab4_4);
+            this.groupBox22.Controls.Add(this.label_lab4_W);
             this.groupBox22.Controls.Add(this.label_lab4_L);
             this.groupBox22.Controls.Add(this.label_lab4_A);
             this.groupBox22.Controls.Add(this.label11);
@@ -1565,14 +1565,14 @@
             this.groupBox22.TabStop = false;
             this.groupBox22.Text = "Analytical variables";
             // 
-            // label_lab4_w2
+            // label_lab4_W2
             // 
-            this.label_lab4_w2.AutoSize = true;
-            this.label_lab4_w2.Location = new System.Drawing.Point(181, 214);
-            this.label_lab4_w2.Name = "label_lab4_w2";
-            this.label_lab4_w2.Size = new System.Drawing.Size(11, 16);
-            this.label_lab4_w2.TabIndex = 24;
-            this.label_lab4_w2.Text = "-";
+            this.label_lab4_W2.AutoSize = true;
+            this.label_lab4_W2.Location = new System.Drawing.Point(181, 214);
+            this.label_lab4_W2.Name = "label_lab4_W2";
+            this.label_lab4_W2.Size = new System.Drawing.Size(11, 16);
+            this.label_lab4_W2.TabIndex = 24;
+            this.label_lab4_W2.Text = "-";
             // 
             // label_lab4_L2
             // 
@@ -1601,14 +1601,14 @@
             this.label_lab4_W1.TabIndex = 20;
             this.label_lab4_W1.Text = "-";
             // 
-            // label_lab4_4
+            // label_lab4_W
             // 
-            this.label_lab4_4.AutoSize = true;
-            this.label_lab4_4.Location = new System.Drawing.Point(181, 156);
-            this.label_lab4_4.Name = "label_lab4_4";
-            this.label_lab4_4.Size = new System.Drawing.Size(11, 16);
-            this.label_lab4_4.TabIndex = 19;
-            this.label_lab4_4.Text = "-";
+            this.label_lab4_W.AutoSize = true;
+            this.label_lab4_W.Location = new System.Drawing.Point(181, 156);
+            this.label_lab4_W.Name = "label_lab4_W";
+            this.label_lab4_W.Size = new System.Drawing.Size(11, 16);
+            this.label_lab4_W.TabIndex = 19;
+            this.label_lab4_W.Text = "-";
             // 
             // label_lab4_L
             // 
@@ -1912,11 +1912,11 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox_lab4_Time;
         private System.Windows.Forms.GroupBox groupBox22;
-        private System.Windows.Forms.Label label_lab4_w2;
+        private System.Windows.Forms.Label label_lab4_W2;
         private System.Windows.Forms.Label label_lab4_L2;
         private System.Windows.Forms.Label label_lab4_L1;
         private System.Windows.Forms.Label label_lab4_W1;
-        private System.Windows.Forms.Label label_lab4_4;
+        private System.Windows.Forms.Label label_lab4_W;
         private System.Windows.Forms.Label label_lab4_L;
         private System.Windows.Forms.Label label_lab4_A;
         private System.Windows.Forms.Label label11;

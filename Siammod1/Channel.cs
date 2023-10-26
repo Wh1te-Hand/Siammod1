@@ -11,6 +11,8 @@ namespace Siammod1
         double intensity1, intensity2;
         private double time_busy = 0;
         private double time_free = 0;
+        private long number_request1 = 0;
+        private long number_request2 = 0;
         Boolean employed = false;
         private Random rand = new Random();
 
@@ -18,6 +20,14 @@ namespace Siammod1
         {
             this.intensity1 = intensity1;
             this.intensity2 = intensity2;
+        }
+
+        public long Request1 { 
+        get { return number_request1; }
+        }
+
+        public long Request2 { 
+        get { return number_request2; }
         }
         public double timeWork
         {
@@ -37,19 +47,20 @@ namespace Siammod1
         }
         public double Solve()
         {
-            Random rnd = new Random();
             double var;
             double result = 0;
-            var = rnd.NextDouble();
+            var = rand.NextDouble();
             if (var <= 0.3)
             {
-                var = rnd.NextDouble();
+                var = rand.NextDouble();
                 result = ((-1) / intensity1) * Math.Log(var, Math.E);
+                number_request1++;
             }
             else
             {
-                var = rnd.NextDouble();
+                var = rand.NextDouble();
                 result = ((-1) / intensity2) * Math.Log(var, Math.E);
+                number_request2++;
             }
             employed = true;
             return result;

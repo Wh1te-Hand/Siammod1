@@ -11,6 +11,7 @@ namespace Siammod1
         double intensity=80;
         double number_use = 0;
         double number_reject = 0;
+        private Random rand = new Random();
 
         public Generator_lab4(double intensity)
         {
@@ -28,10 +29,9 @@ namespace Siammod1
             set => number_reject = value;
         }
         public Double Tact()
-        {
-            Random rnd = new Random();
+        {           
             double var;
-            var = rnd.NextDouble();
+            var = rand.NextDouble();
             return ((-1) / intensity) * Math.Log(var, Math.E);
         }
 

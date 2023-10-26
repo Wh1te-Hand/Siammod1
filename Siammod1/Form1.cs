@@ -1084,6 +1084,7 @@ namespace Siammod1
             double time_channel2 = double.MaxValue;
             double time_before_event = 0;
             int state = 0;
+           
             while (total_time<=lab4_time) {
 
                 if (state == 0)
@@ -1093,10 +1094,15 @@ namespace Siammod1
                     if (!channel1.Employed)
                     {
                         time_channel1 = channel1.Solve();
+                        generator.tactsUse++;
                     }
                     else if (!channel2.Employed)
                     {
                         time_channel2 = channel2.Solve();
+                        generator.tactsUse++;
+                    }
+                    else {
+                        generator.tactsRejected++;
                     }
                 }
                 else if (state == 1) 
@@ -1112,9 +1118,29 @@ namespace Siammod1
                 state=find_min_state(time_source,time_channel1,time_channel2);
                 time_before_event = find_min_time(time_source, time_channel1, time_channel2);
                 total_time += time_before_event;
+                time_source-=time_before_event;
+                time_channel1-= time_before_event;
+                time_channel2-= time_before_event;
+
                 channel1.calculate_time(time_before_event);
                 channel2.calculate_time(time_before_event);
             }
+
+            double lab4_A = (double)(channel1.Request1 + channel1.Request2 + channel2.Request1 + channel2.Request2) / total_time;
+            double lab4_L1 = (channel1.timeWork) / total_time;
+            double lab4_L2 = (channel2.timeWork) / total_time;
+            double lab4_L = (channel1.timeWork+channel2.timeWork)/total_time;
+            double lab4_W1 = total_time / (channel1.Request1 + channel1.Request2);
+            double lab4_W2 = total_time / (channel2.Request1 + channel2.Request2);
+            double lab4_W = total_time / (channel1.Request1 + channel1.Request2+ channel2.Request1 + channel2.Request2);
+
+            this.label_lab4_A.Text =lab4_A.ToString();
+            this.label_lab4_L.Text =lab4_L.ToString();
+            this.label_lab4_L1.Text = lab4_L1.ToString();
+            this.label_lab4_L2.Text = lab4_L2.ToString();
+            this.label_lab4_W.Text = lab4_W.ToString();
+            this.label_lab4_W1.Text = lab4_W1.ToString();
+            this.label_lab4_W2.Text = lab4_W2.ToString();
         }
 
         private int find_min_state(double source, double channel1, double channel2) {
